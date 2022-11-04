@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+  text-align: center;
+  height: 3000px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  background-color: dodgerblue;
+  color: black;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: 28px;
+  font-family: Source Code Pro;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  background-color: dodgerblue;
+  transition: width 8s;
+}
+
+.box:hover {
+  width: 400px;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  /* background-color: orange; */
+  /* border-top: 190px solid red; */
+  border-right: 190px solid transparent;
+  border-bottom: 190px solid blue;
+  border-left: 190px solid transparent;
+
+}
+
+@media only screen and (min-width:350px) and (max-width:700px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+.animcon {
+  width: 600px;
+  height: 600px;
+  border: 10px solid black;
+  position: relative;
+}
+
+.animCircle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: black;
+
+  animation-name: anim-circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition: position linear 1s;
+}
+
+/* VIBGYOR */
+@keyframes anim-circle {
+  0% {
+    background-color: rgb(128, 0, 0);
+
+  }
+
+  25% {
+    background-color: green;
+    position: absolute;
+    right: 0px;
+
+  }
+
+  50% {
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  75% {
+    background-color: aqua;
+    position: absolute;
+    left: 0px;
+  }
+
+  100% {
+    background-color: brown;
+    position: absolute;
+    top: 0px;
+
+  }
+}
