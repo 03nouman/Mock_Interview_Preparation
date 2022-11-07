@@ -1,0 +1,141 @@
+/* if  h1 is contained in body than it will apply the styles */
+body>h1 {
+  color: red;
+}
+
+/* div p {
+  background-color: yellow;
+} */
+
+/* if p is direct child of #para then only it will be applicable */
+#para>p {
+  background-color: aqua;
+}
+
+/* if ul is last sibling of p with same parent then only it will apply the styles */
+ul+p {
+  color: red;
+}
+
+li:first-of-type+li {
+  color: red;
+}
+
+.h1~p {
+  background-color: aqua;
+}
+
+p~span {
+  color: blue;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  font-size: bold;
+  background-color: dodgerblue;
+  border-radius: 22px;
+  border: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:active {
+  background-color: red;
+}
+
+a:visited {
+  background-color: brown;
+  color: black;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px 100px 1;
+}
+
+.cart {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.cart:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  rotate: 180deg;
+}
+
+.transform {
+  border: solid red;
+  transform: rotate(180deg), skew(2px, 10px) scale(2.5), translate(20px, 30px);
+  width: 140px;
+  height: 60px;
+}
+
+.gridCon {
+
+  width: 900px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 20px;
+  text-align: justify;
+
+}
+
+.box {
+  background-color: aqua;
+}
+
+.box1 {
+  background-color: burlywood;
+  grid-column: 1/ span 3;
+
+}
+
+.box2 {
+  background-color: rgb(198, 46, 72);
+  grid-column: 1/ 2;
+  grid-row: 2/3;
+}
+
+.box3 {
+  background-color: burlywood;
+  grid-column: 2/3;
+  grid-row: 2/span 2;
+}
+
+.box4 {
+  background-color: rgb(198, 46, 72);
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.box5 {
+  background-color: burlywood;
+  grid-column: 1/2;
+  grid-row: 3/ span 2;
+}
+
+.box6 {
+  background-color: rgb(198, 46, 72);
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.box7 {
+  background-color: burlywood;
+  grid-column: 2/span 2;
+  grid-row: 4/5;
+}

@@ -1,0 +1,14 @@
+p {
+  background-color: aqua;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
